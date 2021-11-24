@@ -135,11 +135,11 @@ package {
 			<path id="meter7" d="M19.945,18.746c-2.6,0-4.739,0.159-6.42,0.489c-1.689,0.32-3.18,0.94-4.479,1.851c-1.299,0.911-2.239,1.649-2.819,2.239 c-0.58,0.591-1.431,1.75-2.53,3.5s-1.979,3.021-2.63,3.801l1.95-22.58c0.13-0.13,0.58-0.55,1.359-1.26 c0.779-0.711,1.229-1.141,1.359-1.27c0.13-0.131,0.55-0.49,1.271-1.07c0.71-0.58,1.229-0.91,1.561-0.971 c0.32-0.06,0.84-0.289,1.561-0.68c0.71-0.391,1.359-0.62,1.949-0.68c0.58-0.061,1.301-0.19,2.141-0.391 c0.841-0.199,1.78-0.33,2.82-0.39c1.039-0.07,2.14-0.101,3.311-0.101c6.1,0,12.939,1.23,20.54,3.701 c7.6,2.469,13.659,3.699,18.2,3.699c3.369,0,6.979-0.75,10.8-2.24c3.829-1.49,6.85-3.149,9.051-4.959 c-3.5,8.699-7.49,18.459-11.972,29.299c-4.48,10.84-7.561,18.36-9.25,22.58c-1.688,4.222-3.5,9.312-5.448,15.281 c-1.951,5.969-3.183,11.1-3.701,15.379c-0.521,4.281-0.779,9.211-0.779,14.791h-25.31c0.13-8.951,0.71-15.18,1.75-18.688 c2.21-7.013,10.06-19.271,23.55-36.791c3.889-5.061,8.76-11.29,14.6-18.69c-2.211,1.3-5.26,1.95-9.149,1.95 c-4.799,0-10.32-1.3-16.549-3.891C30.455,20.045,24.875,18.746,19.945,18.746z"/>\
 			<path id="meter8" d="M31.185,58.34c-7.141,3.311-12.17,6.15-15.08,8.529c-2.91,2.381-4.37,5.361-4.37,8.932c0,3.84,2.91,7.34,8.729,10.521 c5.819,3.18,11.641,4.76,17.46,4.76c5.56,0,10.421-1.358,14.591-4.069c4.17-2.709,6.25-6.119,6.25-10.222 c0-1.851-0.5-3.539-1.49-5.06c-0.99-1.52-2.551-2.881-4.66-4.069c-2.121-1.188-4.131-2.222-6.051-3.08s-4.5-1.92-7.74-3.17 C35.585,60.16,33.034,59.131,31.185,58.34z M46.265,41.669c6.75-3.439,11.278-6.279,13.59-8.529c2.319-2.25,3.469-5.23,3.469-8.93 c0-3.84-2.25-7.34-6.75-10.521c-4.5-3.18-9.459-4.76-14.879-4.76s-9.82,1.319-13.201,3.97c-3.369,2.65-5.06,6.09-5.06,10.32 c0,1.98,0.33,3.74,0.989,5.26c0.66,1.52,1.921,2.91,3.771,4.17c1.851,1.26,3.37,2.221,4.561,2.881 c1.189,0.659,3.41,1.689,6.649,3.079C42.664,39.98,44.945,41.01,46.265,41.669z M22.055,53.18c-6.48-3.18-11.08-6.75-13.79-10.719 C5.555,38.49,4.195,33,4.195,25.99c0-6.75,3.37-12.67,10.12-17.76s15.021-7.71,24.811-7.84c9.919,0,18.221,2.32,24.91,6.949 c6.689,4.631,10.021,10.25,10.021,16.871c0,5.16-1.392,9.459-4.17,12.899c-2.779,3.44-7.341,6.681-13.689,9.72 c7.67,3.44,13.16,7.081,16.469,10.911c3.312,3.83,4.961,9.26,4.961,16.27c0,7.279-3.871,13.359-11.608,18.26 c-7.74,4.892-16.701,7.34-26.891,7.34c-10.051,0-18.979-2.379-26.79-7.139s-11.71-10.32-11.71-16.67c0-4.762,1.891-8.9,5.659-12.4 S15.315,56.49,22.055,53.18z"/>\
 			<path id="meter9" d="M38.32,8.405c-5.42,0-9.61,2.28-12.58,6.83c-2.97,4.561-4.46,9.74-4.46,15.55c0,4.49,1.39,8.32,4.16,11.49 c2.77,3.17,6.8,4.75,12.08,4.75c5.81,0,11.89-2.44,18.22-7.33C54.83,18.844,49.019,8.405,38.32,8.405z M10.59,90.625 c-3.568-3.43-5.35-7.66-5.35-12.68c0-3.301,1.16-6.271,3.47-8.91c2.312-2.641,5.05-3.961,8.221-3.961 c3.961,0,7.069,0.99,9.311,2.971c2.25,1.98,3.37,4.75,3.37,8.32c0,1.58-0.891,3.369-2.67,5.35c-1.78,1.98-3.73,2.971-5.84,2.971 c2.908,4.619,7.988,6.931,15.25,6.931c6.999,0,12.05-3.961,15.158-11.892c3.102-7.92,4.66-18.16,4.66-30.708 c-2.77,1.45-4.949,2.509-6.54,3.169c-1.59,0.66-3.859,1.289-6.83,1.879c-2.97,0.591-6.438,0.892-10.398,0.892 c-10.04,0-17.66-2.108-22.88-6.34c-5.222-4.229-7.82-9.899-7.82-17.04c0-8.979,3.729-16.41,11.19-22.289 c7.46-5.881,15.948-8.811,25.46-8.811c12.81,0,22.579,4.29,29.318,12.88c6.74,8.58,10.17,20.8,10.301,36.649 c-0.131,13.871-3.761,25.591-10.899,35.16c-7.131,9.58-16.71,14.36-28.72,14.36c-6.342,0-11.592-0.59-15.75-1.78 C18.41,96.564,14.42,94.186,10.59,90.625z"/>\
-			<text id="sfz" style="font:italic 14px serif" x="-5" y="-7">s<tspan font-size="16" font-weight="bold">f</tspan>z</text>\
-			<text id="trl" style="font:italic bold 16px serif" x="-2" y="-4">tr</text>\
+			<text id="sfz" style="font:italic 14px serif_embedded" x="-5" y="-7">s<tspan font-size="16" font-weight="bold">f</tspan>z</text>\
+			<text id="trl" style="font:italic bold 16px serif_embedded" x="-2" y="-4">tr</text>\
 			<path id="marcato" d="m-3 0l3 -7l3 7l-1.5 0l-1.8 -4.2l-1.7 4.2"/>\
-			<text id="ped" font-family="serif" font-size="16" font-style="italic" x="-10" y="-4">Ped</text>\
-			<text id="pedoff" font-family="serif" font-size="16" font-style="italic" x="-5" y="-4">*</text>';
+			<text id="ped" font-family="serif_embedded" font-size="16" font-style="italic" x="-10" y="-4">Ped</text>\
+			<text id="pedoff" font-family="serif_embedded" font-size="16" font-style="italic" x="-5" y="-4">*</text>';
 
 		// staff system
 		private const OPEN_BRACE : Number = 0x01;
@@ -7087,7 +7087,7 @@ package {
 							x += 32;
 							anno_start (s);
 							xygl (x, staff_tb[s.st].y + 12, "mrest");
-							out_XYAB ('<text style="font:bold 15px serif" x ="X" y="Y" text-anchor="middle">A</text>\n',
+							out_XYAB ('<text style="font:bold 15px serif_embedded" x ="X" y="Y" text-anchor="middle">A</text>\n',
 								x, staff_tb[s.st].y + 28, s.nmes);
 							anno_stop (s);
 							break;
@@ -7344,10 +7344,10 @@ package {
 			private var font_tb : Object = {};
 			private var fid : int = 1;
 			private var font_scale_tb : Object = {
-				serif: 1.05,
-				serifBold: 1.05,
-				'sans-serif': 1.1,
-				//'sans-serifBold': 1.1,
+				serif_embedded: 1.05,
+				serif_embeddedBold: 1.05,
+				'sans_embedded': 1.1,
+				//'sans_embeddedBold': 1.1,
 				//Palatino: 1.1,
 				Mono: 1.35
 				};
@@ -7508,10 +7508,10 @@ package {
 					&& font) {
 					new_name = font.name
 				} else {
-					new_name = new_name.replace('Times-Roman', 'serif');
-					new_name = new_name.replace('Times', 'serif');
-					new_name = new_name.replace('Helvetica', 'sans-serif');
-					// new_name = new_name.replace('Courier', 'sans-serif')
+					new_name = new_name.replace('Times-Roman', 'serif_embedded');
+					new_name = new_name.replace('Times', 'serif_embedded');
+					new_name = new_name.replace('Helvetica', 'sans_embedded');
+					// new_name = new_name.replace('Courier', 'sans_embedded')
 				}
 				if (a.length > 1) {
 					new_size = a[a.length - 1]
@@ -7973,28 +7973,28 @@ package {
 			
 			// initialize the default fonts
 			private function font_init () : void {
-				param_set_font("annotationfont", "sans-serif 10");
-				param_set_font("composerfont", "serifItalic 13");
-				param_set_font("footerfont", "serif 16");
-				param_set_font("gchordfont", "sans-serif 12");
-				param_set_font("headerfont", "serif 16");
-				param_set_font("historyfont", "serif 16");
-				param_set_font("infofont", "serifItalic 14");
-				param_set_font("measurefont", "sans-serif 8");
-				param_set_font("partsfont", "serif 15");
-				param_set_font("repeatfont", "serif 13");
-				param_set_font("subtitlefont", "serif 16");
-				param_set_font("tempofont", "serifBold 15");
-				param_set_font("textfont", "serif 16");
-				param_set_font("titlefont", "serif 20");
-				param_set_font("vocalfont", "serifBold 13");
-				param_set_font("voicefont", "serifBold 13");
-				param_set_font("wordsfont", "serif 16")
+				param_set_font("annotationfont", "sans_embedded 10");
+				param_set_font("composerfont", "serif_embeddedItalic 13");
+				param_set_font("footerfont", "serif_embedded 16");
+				param_set_font("gchordfont", "sans_embedded 12");
+				param_set_font("headerfont", "serif_embedded 16");
+				param_set_font("historyfont", "serif_embedded 16");
+				param_set_font("infofont", "serif_embeddedItalic 14");
+				param_set_font("measurefont", "sans_embedded 8");
+				param_set_font("partsfont", "serif_embedded 15");
+				param_set_font("repeatfont", "serif_embedded 13");
+				param_set_font("subtitlefont", "serif_embedded 16");
+				param_set_font("tempofont", "serif_embeddedBold 15");
+				param_set_font("textfont", "serif_embedded 16");
+				param_set_font("titlefont", "serif_embedded 20");
+				param_set_font("vocalfont", "serif_embeddedBold 13");
+				param_set_font("voicefont", "serif_embeddedBold 13");
+				param_set_font("wordsfont", "serif_embedded 16")
 			}
 			
 			/**
 			 * Builds and returns a dedicated CSS class based on a given font name and size
-			 * in the format <font_name>.<size>, e.g., "serif.20".
+			 * in the format <font_name>.<size>, e.g., "serif_embedded.20".
 			 */
 			private function style_font (fontInfo : String) : String  {
 				var segments : Array = fontInfo.split('.');
@@ -18362,12 +18362,12 @@ package {
 				crdc:	{
 					dx: 0,
 					dy: 5,
-					style: 'font:italic 14px serif'
+					style: 'font:italic 14px serif_embedded'
 				},
 				dacs:	{
 					dx: 0,
 					dy: 3,
-					style: 'font:16px serif',
+					style: 'font:16px serif_embedded',
 					anchor: ' text-anchor="middle"'
 				},
 				fng:	{
@@ -18379,12 +18379,12 @@ package {
 				pf:	{
 					dx: 0,
 					dy: 5,
-					style: 'font:italic bold 16px serif'
+					style: 'font:italic bold 16px serif_embedded'
 				},
 				'@':	{
 					dx: 0,
 					dy: 5,
-					style: 'font: 12px sans-serif'
+					style: 'font: 12px sans_embedded'
 				}
 			}
 			
@@ -18446,7 +18446,7 @@ package {
 			}
 			private function out_8va(x, y, val, defl) : *  {
 				if (!defl.nost) {
-					out_XYAB('<text x="X" y="Y" style="font:italic bold 12px serif">8<tspan dy="-4" style="font-size:10px">va</tspan></text>\n',
+					out_XYAB('<text x="X" y="Y" style="font:italic bold 12px serif_embedded">8<tspan dy="-4" style="font-size:10px">va</tspan></text>\n',
 						x - 8, y);
 					x += 12;
 					val -= 12
@@ -18462,7 +18462,7 @@ package {
 			private function out_8vb(x, y, val, defl) : *  {
 				if (!defl.nost) {
 					out_XYAB('<text x="X" y="Y" \
-						style="font:italic bold 12px serif">8\
+						style="font:italic bold 12px serif_embedded">8\
 						<tspan dy="-4" style="font-size:10px">vb</tspan></text>\n',
 						x - 8, y);
 					x += 4;
@@ -18479,7 +18479,7 @@ package {
 			private function out_15ma(x, y, val, defl) : *  {
 				if (!defl.nost) {
 					out_XYAB('<text x="X" y="Y" \
-						style="font:italic bold 12px serif">15\
+						style="font:italic bold 12px serif_embedded">15\
 						<tspan dy="-4" style="font-size:10px">ma</tspan></text>\n',
 						x - 10, y);
 					x += 20;
@@ -18496,7 +18496,7 @@ package {
 			private function out_15mb(x, y, val, defl) : *  {
 				if (!defl.nost) {
 					out_XYAB('<text x="X" y="Y" \
-						style="font:italic bold 12px serif">15\
+						style="font:italic bold 12px serif_embedded">15\
 						<tspan dy="-4" style="font-size:10px">mb</tspan></text>\n',
 						x - 10, y);
 					x += 7;
