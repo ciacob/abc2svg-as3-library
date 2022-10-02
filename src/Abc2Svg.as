@@ -2844,29 +2844,35 @@ package {
 			s_closest = s1;
 			p_min = 100;
 			p_max = 0;
-			for (s = s1; ; s = s.next) { 
-				if (s.type != C.NOTE) {
-					continue;
-				}
-				if ((scale = s.p_v.scale) == 1) {
-					scale = staff_tb[s.st].staffscale;
-				}
-				if (s.stem >= 0) {
-					x = stem_xoff + s.notes[0].shhd;
-					if (s.notes[s.nhd].pit > p_max) {
-						p_max = s.notes[s.nhd].pit;
-						s_closest = s;
+			if (s !== null && s1 !== null) {
+				for (s = s1; s !== null; s = s.next) {
+					if (!s) {
+						trace ('s is', s);
+						continue;
 					}
-				} else {
-					x = (-stem_xoff + s.notes[s.nhd].shhd);
-					if (s.notes[0].pit < p_min) {
-						p_min = s.notes[0].pit;
-						s_closest = s;
+					if (s.type != C.NOTE) {
+						continue;
 					}
-				}
-				s.xs = s.x + x * scale;
-				if (s == s2) {
-					break;
+					if ((scale = s.p_v.scale) == 1) {
+						scale = staff_tb[s.st].staffscale;
+					}
+					if (s.stem >= 0) {
+						x = stem_xoff + s.notes[0].shhd;
+						if (s.notes[s.nhd].pit > p_max) {
+							p_max = s.notes[s.nhd].pit;
+							s_closest = s;
+						}
+					} else {
+						x = (-stem_xoff + s.notes[s.nhd].shhd);
+						if (s.notes[0].pit < p_min) {
+							p_min = s.notes[0].pit;
+							s_closest = s;
+						}
+					}
+					s.xs = s.x + x * scale;
+					if (s == s2) {
+						break;
+					}
 				}
 			}
 			
@@ -3019,7 +3025,7 @@ package {
 			// Have room for the gracenotes, bars and clefs
 			// FIXME: test
 			if (!two_staves && !two_dir) {
-				for (s = s1.next; ; s = s.next) { 
+				for (s = s1.next; s !== null; s = s.next) {
 					var g;
 					switch (s.type) {
 
@@ -3080,7 +3086,7 @@ package {
 			}
 			
 			// Adjust final stems and rests under beam
-			for (s = s1; ; s = s.next) { 
+			for (s = s1; s !== null ; s = s.next) {
 				switch (s.type) {
 					case C.NOTE:
 						s.ys = a * s.xs + b - staff_tb[s.st].y;
@@ -3217,7 +3223,7 @@ package {
 				/* make first beam over whole word and adjust the stem lengths */
 				draw_beam(s1.xs - shift, s2.xs + shift, 0, bh, bm, 1);
 				da = 0
-				for (s = s1; ; s = s.next) { 
+				for (s = s1; s !== null; s = s.next) {
 					if (s.type == C.NOTE
 						&& s.stem != beam_dir)
 						s.ys = bm.a * s.xs + bm.b
@@ -3245,7 +3251,7 @@ package {
 					shift += bshift
 					if (da != 0)
 						bm.a += da
-					for (s = s1; ; s = s.next) { 
+					for (s = s1; s !== null; s = s.next) {
 						if (s.type != C.NOTE
 							|| s.nflags < i) {
 							if (s == s2)
@@ -4529,7 +4535,7 @@ package {
 				if (k1.grace && k1.stem > 0)
 					return -1
 				
-				for (s = k1; ; s = s.next) { 
+				for (s = k1; s !== null; s = s.next) {
 					if (s.type == C.NOTE) {
 						if (!s.stemless) {
 							if (s.stem < 0)
@@ -5244,7 +5250,7 @@ package {
 						nb_only = false
 					} else {
 						nb_only = true
-						for (s3 = s1; ; s3 = s3.next) { 
+						for (s3 = s1; s3 !== null; s3 = s3.next) {
 							if (s3.type != C.NOTE
 								&& s3.type != C.REST) {
 								if (s3.type == C.GRACE
@@ -5310,7 +5316,7 @@ package {
 							b += ym - yy;
 						b -= 10
 					}
-					for (s3 = s1; ; s3 = s3.next) { 
+					for (s3 = s1; s3 !== null; s3 = s3.next) {
 						if (s3.x >= xm)
 							break
 					}
@@ -5417,7 +5423,7 @@ package {
 					
 					/* shift up bracket if needed */
 					dy = 0
-					for (s3 = s1; ; s3 = s3.next) { 
+					for (s3 = s1; s3 !== null; s3 = s3.next) {
 						if (!s3.dur			/* not a note or a rest */
 							|| s3.st != upstaff) {
 							if (s3 == s2)
@@ -5438,7 +5444,7 @@ package {
 					
 					/* shift the slurs / decorations */
 					ym += 8
-					for (s3 = s1; ; s3 = s3.next) { 
+					for (s3 = s1; s3 !== null; s3 = s3.next) {
 						if (s3.st == upstaff) {
 							yy = ym + (s3.x - xm) * a
 							if (s3.ymx < yy)
@@ -5507,7 +5513,7 @@ package {
 					
 					/* shift down the bracket if needed */
 					dy = 0
-					for (s3 = s1; ; s3 = s3.next) { 
+					for (s3 = s1; s3 !== null; s3 = s3.next) {
 						if (!s3.dur			/* not a note nor a rest */
 							|| s3.st != upstaff) {
 							if (s3 == s2)
@@ -5528,7 +5534,7 @@ package {
 					
 					/* shift the slurs / decorations */
 					ym -= 2
-					for (s3 = s1; ; s3 = s3.next) { 
+					for (s3 = s1; s3 !== null; s3 = s3.next) {
 						if (s3.st == upstaff) {
 							if (s3 == s2)
 								break
@@ -9355,7 +9361,7 @@ package {
 				x = gspleft;
 				
 				g.beam_st = true
-				for ( ; ; g = g.next) { 
+				for ( ; g !== null; g = g.next) {
 					set_head_shift(g)
 					acc_shift(g.notes, 7);
 					dx = 0
@@ -9439,7 +9445,7 @@ package {
 				s2 = s.prev
 				if (s2) {
 					if (s2.a_gch) {
-						for (s2 = s.ts_prev; ; s2 = s2.ts_prev) { 
+						for (s2 = s.ts_prev; s2 !== null; s2 = s2.ts_prev) {
 							if (s2 == s.prev) {
 								if (wlw < lspc)
 									wlw = lspc
@@ -9456,7 +9462,7 @@ package {
 				s2 = s.next
 				if (s2) {
 					if (s2.a_gch) {
-						for (s2 = s.ts_next; ; s2 = s2.ts_next) { 
+						for (s2 = s.ts_next; s2 !== null; s2 = s2.ts_next) {
 							if (s2 == s.next) {
 								if (s.wr < rspc)
 									s.wr = rspc
@@ -10334,7 +10340,7 @@ package {
 				dur /= n
 				if (n == 2) {			/* repeat 2 measures (once) */
 					s3 = s
-					for (s2 = s.ts_next; ; s2 = s2.ts_next) { 
+					for (s2 = s.ts_next; s2 !== null; s2 = s2.ts_next) {
 						if (s2.st != st)
 							continue
 						if (s2.v == v
@@ -10351,7 +10357,7 @@ package {
 					if (s2.seqst)
 						s2.space = set_space(s2);
 					s3 = s2.next;
-					for (s2 = s3.ts_next; ; s2 = s2.ts_next) { 
+					for (s2 = s3.ts_next; s2 !== null; s2 = s2.ts_next) {
 						if (s2.st != st)
 							continue
 						if (s2.v == v
@@ -10373,7 +10379,7 @@ package {
 				/* repeat 1 measure */
 				s3 = s
 				for (j = k; --j >= 0; ) { 
-					for (s2 = s3.ts_next; ; s2 = s2.ts_next) { 
+					for (s2 = s3.ts_next; s2 !== null; s2 = s2.ts_next) {
 						if (s2.st != st)
 							continue
 						if (s2.v == v
@@ -10513,7 +10519,7 @@ package {
 					break
 				}
 				done = 0
-				for ( ; ; s = s.ts_next) { 
+				for ( ; s !== null; s = s.ts_next) {
 					if (!s)
 						return s
 					if (!s.seqst)
@@ -18373,7 +18379,7 @@ package {
 				fng:	{
 					dx: 0,
 					dy: 1,
-					style: 'font-family:Bookman; font-size:8px',
+					style: 'font-family:sans_embedded; font-size:8px',
 					anchor: ' text-anchor="middle"'
 				},
 				pf:	{
@@ -18609,7 +18615,7 @@ package {
 					var hStrokeOpacity : Number = (hStyle.strokeOpacity as Number) || 1;
 					style += '\n.hotspot { stroke: ' + hStroke +'; fill: ' + hFill + '; fill-opacity: ' + hFillOpacity + 
 						'; stroke-opacity: ' + hStrokeOpacity + '; }';
-					style += '\n.tuplet-number { font-family: sans; font-size: 9 }';
+					style += '\n.tuplet-number { font-family: sans_embedded; font-size: 9 }';
 					style += '\n.ghost-rest { fill-opacity: 0.3; stroke-opacity: 0.3; }';
 					style += '\n.fill {fill: ' + (cfmt.fgcolor || 'currentColor') + '}';
 					style += '\n.stroke {stroke: ' + (cfmt.fgcolor || 'currentColor') + '; fill: none}';
@@ -19189,7 +19195,7 @@ package {
 					bar_rep = gene.nbar
 				
 				/* don't count a bar at start of line */
-				for (s = tsfirst; ; s = s.ts_next) { 
+				for (s = tsfirst; s!== null; s = s.ts_next) {
 					if (!s)
 						return
 					switch (s.type) {
