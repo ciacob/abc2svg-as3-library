@@ -219,7 +219,7 @@ package {
 			
 		// Utilities
 		// ---------
-		private function clone (obj : Object, lvl : Number = 0) : Object {
+		private static function clone (obj : Object, lvl : Number = 0) : Object {
 			if (!obj) {
 				return obj;
 			}
@@ -513,7 +513,7 @@ package {
 		}
 			
 		/* Get the staff position of the dynamic and volume marks */
-		private function up_p(s : Object, pos : Number) : *  {
+		private static function up_p(s : Object, pos : Number) : *  {
 			switch (pos) {
 				case C.SL_ABOVE:
 					return true;
@@ -535,7 +535,7 @@ package {
 		// -----------------
 		
 		/* 2: special case for arpeggio */
-		private function d_arp(de) : *  {
+		private static function d_arp(de) : *  {
 			var	m;
 			var h;
 			var dx;
@@ -664,7 +664,7 @@ package {
 		}
 			
 		/* 0: near the note (dot, tenuto) */
-		private function d_near(de) : *  {
+		private static function d_near(de) : *  {
 			var	y;
 			var up;
 			var s = de.s;
@@ -760,7 +760,7 @@ package {
 		}
 			
 		/* 1: special case for slide */
-		private function d_slide(de) : *  {
+		private static function d_slide(de) : *  {
 			var	m;
 			var dx;
 			var s = de.s;
@@ -1287,7 +1287,7 @@ package {
 		/**
 		* Adjusts the width of a decoration symbol.
 		*/
-		private function deco_width(s) : *  {
+		private static function deco_width(s) : *  {
 			var	dd;
 			var i;
 			var wl = 0;
@@ -4131,7 +4131,7 @@ package {
 			}
 			
 			/* -- set the y offset of the dots -- */
-			private function setdoty(s, y_tb) : *  {
+			private static function setdoty(s, y_tb) : *  {
 				var m, m1, y
 				
 				/* set the normal offsets */
@@ -4488,7 +4488,7 @@ package {
 			/**
 			 * Finds where to terminate/start a slur.
 			 */
-			private function next_scut (s : Object) : Object {
+			private static function next_scut (s : Object) : Object {
 				var prev : Object = s;
 				
 				for (s = s.next; s; s = s.next) { 
@@ -4505,7 +4505,7 @@ package {
 			/**
 			 * TODO: DOCUMENT
 			 */
-			private function prev_scut (s : Object) : Object {
+			private static function prev_scut (s : Object) : Object {
 				while (s.prev) { 
 					s = s.prev
 					if (s.rbstart)
@@ -5754,7 +5754,7 @@ package {
 			}
 			
 			/* -- try to get the symbol of a ending tie when combined voices -- */
-			private function tie_comb(s) : *  {
+			private static function tie_comb(s) : *  {
 				var	s1, time, st;
 				
 				time = s.time + s.dur;
@@ -7147,7 +7147,7 @@ package {
 			}
 			
 			/* -- set the tie directions for one voice -- */
-			private function set_tie_dir(sym) : *  {
+			private static function set_tie_dir(sym) : *  {
 				var s, i, ntie, dir, sec, pit, ti
 				
 				for (s = sym; s; s = s.next) { 
@@ -7435,7 +7435,7 @@ package {
 					wordsspace: 5
 			}
 			
-			private function get_bool(param) : *  {
+			private static function get_bool(param) : *  {
 				return !param || !/^(0|n|f)/i.test(param) // accept void as true !
 			}
 			
@@ -8002,7 +8002,7 @@ package {
 			 * Builds and returns a dedicated CSS class based on a given font name and size
 			 * in the format <font_name>.<size>, e.g., "serif_embedded.20".
 			 */
-			private function style_font (fontInfo : String) : String  {
+			private static function style_font (fontInfo : String) : String  {
 				var segments : Array = fontInfo.split('.');
 				fontInfo = segments[0].toLowerCase();
 				var size : String = segments[1] as String;
@@ -10870,7 +10870,7 @@ package {
 			}
 			
 			/* -- set the y values of some symbols -- */
-			private function set_yval(s) : *  {
+			private static function set_yval(s) : *  {
 				//fixme: staff_tb is not yet defined
 				//	var top = staff_tb[s.st].topbar
 				//	var bot = staff_tb[s.st].botbar
@@ -15464,7 +15464,7 @@ package {
 			}
 			
 			// convert a note pitch to ABC text
-			private function note2abc(note) : *  {
+			private static function note2abc(note) : *  {
 				var	i,
 				abc = 'abcdefg'[(note.pit + 77) % 7]
 				
