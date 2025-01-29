@@ -17,7 +17,7 @@ package {
 		private var user : Object;
 		
 		// Storage for deffered operations. Accepts Array items, where the first item in the nested
-		// Array is the function to call, and the rest are arguments to that function.
+		// Array is the function to call, and the rest are arguments to pass to that function.
 		private var _deferredOperations : Array = [];
 		
 		// Storage for rectangles representing the space occupied on screen by every staff. They are 
