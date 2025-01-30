@@ -1,6 +1,5 @@
 .build-scripts
 bin
 bin-release
-
 /.vscode
 /asconfig.json
